@@ -30,4 +30,4 @@ I usually `cd` to the repo I want to mount and just run `dock attach`.
 
 - Mounts your current directory into the container
 - Mounts `~/.pi` so your config, session history is shared across all containers
-- Reads `~/.pi/.env` for any environment variables
+- Store any other env variables u want in `~/.pi/.env` 
