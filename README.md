@@ -2,6 +2,8 @@
 
 My config and script to run the coding harness [pi](https://pi.dev/) in a rootless Docker container.
 
+Note: not a complete replacement for proper sandboxing, but as a safeguard.
+
 ## Quick start
 
 ```bash
