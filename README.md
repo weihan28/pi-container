@@ -19,14 +19,15 @@ cd your-project
 | `stop`    | Stop and remove the container                                   |
 | `upgrade` | Rebuild the image and stop the old container                    |
 
-I usually `cd` to the repo I want and simply run `dock.sh attach`. 
 I also add an alias to my `.zshrc` for convenience:
 ```bash
 alias dock="~/docker-pi/dock.sh"
 ```
 
+I usually `cd` to the repo I want to mount and just run `dock attach`. 
+
 ## How it works
 
 - Mounts your current directory into the container
-- Mounts `~/.pi` so your config is shared across all containers
+- Mounts `~/.pi` so your config, session history is shared across all containers
 - Reads `~/.pi/.env` for any environment variables
