@@ -48,8 +48,9 @@ case "$ACTION" in
             echo "Container not running. Starting it first..."
             "$0" start
         fi
-        docker exec -it "$CONTAINER_NAME" bash
+        echo "Executing Container ..."
         echo "To detach from container, use: Ctrl-p + Ctrl-q"
+        docker exec -it "$CONTAINER_NAME" bash
         ;;
 
     upgrade)
