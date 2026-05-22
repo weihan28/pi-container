@@ -31,5 +31,5 @@ I usually `cd` to the repo I want to mount and just run `dock attach`.
 ## How it works
 
 - Mounts your current directory into the container
-- Mounts `~/.pi` so your config, session history is shared across all containers
+- Mounts `~/.pi/agent` so your config, session history is shared across all containers (selectively mounts to avoid the env file)
 - Store any other env variables u want in `~/.pi/.env` 

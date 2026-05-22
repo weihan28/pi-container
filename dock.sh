@@ -37,7 +37,7 @@ case "$ACTION" in
             --net host \
             --env-file "$ENV_FILE" \
             -v "$REPO_DIR":"$REPO_DIR" \
-            -v ~/.pi:/home/$USER_NAME/.pi \
+            -v ~/.pi/agent:/home/$USER_NAME/.pi/agent \
             -w "$REPO_DIR" \
             --name "$CONTAINER_NAME" \
             "$IMAGE_NAME"
