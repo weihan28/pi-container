@@ -49,6 +49,7 @@ case "$ACTION" in
             "$0" start
         fi
         docker exec -it "$CONTAINER_NAME" bash
+        echo "To detach from container, use: Ctrl-p + Ctrl-q"
         ;;
 
     upgrade)
